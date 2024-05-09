@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+# Programa: pisolog2.py
+# Programador: Beatriz
+# Data: 09/05/2024
+# Este programa lê um número inteiro n > 0 e calcula o piso
+# do logaritmo base 2 de n e imprime o resultado. O programa
+# usa uma função piso() para calcular o resultado.
+# Este programa lê um número inteiro k > 0 que representa a
+
+# Lendo o número inteiro
+num = int(input())
+
+# Inicializa o contador e o resultado
+contador = 0
+resultado = 1
+
+# Itera enquanto o resultado for menor que o número dado
+while resultado <= num:
+    resultado *= 2
+    contador += 1
+
+# Imprimindo o valor do piso de log2(num)
+print(contador - 1)
