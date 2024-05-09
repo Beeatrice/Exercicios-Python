@@ -1,0 +1,17 @@
+# Lendo o número de sucos vendidos
+n = int(input())
+
+# Criando um dicionário para armazenar as vendas dos sucos
+vendas = {}
+
+# Lendo e contabilizando as vendas dos sucos
+for _ in range(n):
+    sabor = input().strip()
+    if sabor in vendas:
+        vendas[sabor] += 1
+    else:
+        vendas[sabor] = 1
+
+# Imprimindo a relação dos sabores dos sucos e a quantidade vendida de cada um
+for sabor, quantidade in vendas.items():
+    print(f"{sabor} {quantidade}")
